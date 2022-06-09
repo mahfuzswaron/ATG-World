@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/icons/logo.png';
 const Navbar = () => {
+    const [loggedIn, setLoggedIn] = useState(false);
     return (
         <div>
             <div class="navbar bg-white">
@@ -19,23 +20,48 @@ const Navbar = () => {
                 </div>
                 <div class="navbar-end dropdown dropdown-end flex justify-end">
                     <label tabindex="0" class="btn btn-link hover:no-underline text-black avatar flex space-x-4 w-full">
-                        <div class="w-10 rounded-full">
-                            <img src="https://api.lorem.space/image/face?hash=33791" />
-                        </div>
-                        <p>Mahfuz Swaron</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
+                        {
+                            loggedIn ? <>
+                                <div class="w-10 rounded-full">
+                                    <img src="https://api.lorem.space/image/face?hash=33791" />
+                                </div>
+                                <p>Mahfuz Swaron</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </>
+                                :
+                                <>
+                                    <p className="normal-case">Create account, <span className='text-[#2F6CE5]'>It's free!</span></p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </>
+                        }
                     </label>
                     <ul tabindex="0" class="mt-36 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                        <li>
-                            <a class="justify-between">
-                                Profile
-                                <span class="badge">New</span>
-                            </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        {
+                            loggedIn ?
+                                <>
+                                    <li>
+                                        <a class="justify-between">
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li><a>Settings</a></li>
+                                    <li onClick={() => setLoggedIn(false)}><a>Logout</a></li>
+                                </>
+                                :
+                                <>
+                                    <li><a class="justify-between">
+                                        Log in
+                                    </a></li>
+                                    <li><a onClick={() => setLoggedIn(true)} class="justify-between">
+                                        Sign Up
+                                    </a></li>
+
+                                </>
+                        }
                     </ul>
                 </div>
             </div>
