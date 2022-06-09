@@ -3,8 +3,8 @@ import logo from '../../assets/icons/logo.png';
 const Navbar = () => {
     const [loggedIn, setLoggedIn] = useState(false);
     return (
-        <div>
-            <div class="navbar bg-white">
+        <div className='px-14 bg-white'>
+            <div class="navbar">
                 <div class="navbar-start">
                     <a class="btn btn-ghost normal-case text-xl">
                         <img src={logo} alt="logo" />
@@ -19,7 +19,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div class="navbar-end dropdown dropdown-end flex justify-end">
-                    <label tabindex="0" class="btn btn-link hover:no-underline text-black avatar flex space-x-4 w-full">
+                    <label tabindex="0" class="btn btn-link hover:no-underline text-black avatar flex justify-end space-x-4 w-full">
                         {
                             loggedIn ? <>
                                 <div class="w-10 rounded-full">
