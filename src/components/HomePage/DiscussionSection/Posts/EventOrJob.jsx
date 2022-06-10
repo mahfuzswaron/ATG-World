@@ -5,7 +5,7 @@ const EventOrJob = ({ postDetails }) => {
     const { category, title, location, date, img, icon, poster, company } = postDetails;
     return (
         <div>
-            <div class="card card-compact w-full bg-white border border-[#E0E0E0]">
+            <div class="card card-compact rounded w-full bg-white border border-[#E0E0E0]">
                 <figure>
                     <img src={img} />
                 </figure>
