@@ -1,5 +1,5 @@
 import React from 'react';
-import shareIcon from '../../../../../assets/icons/share-icon.png'
+import shareIcon from '../../../../../assets/icons/share-icon.png';
 
 const EducationOrArticle = ({ postDetails }) => {
     const { category, title, post, img, icon, poster } = postDetails;

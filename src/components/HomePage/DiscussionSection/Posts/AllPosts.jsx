@@ -1,5 +1,6 @@
 import React from 'react';
 import EducationOrArticle from './EducationOrArticle';
+import EventOrJob from './EventOrJob';
 
 const article = {
     category: 'Article',
@@ -22,19 +23,34 @@ const education = {
         name: 'Random user',
         photo: '../../../../../assets/avatars/Rectangle 3-2.png'
     }
+};
+const event = {
+    category: 'Event',
+    title: 'Finance & Investment Elite Social Mixer @Lujiazui',
+    location: 'Ahmedabad, India',
+    date: 'Fri, 12 Oct, 2018',
+    img: '../../../../../assets/images/Rectangle 5image.jpg',
+    icon: '🗓',
+    poster: {
+        name: 'Random user',
+        photo: '../../../../../assets/avatars/Rectangle 3.png'
+    }
 }
 const AllPosts = () => {
     return (
         <div className='w-3/4 bg-gray-100'>
             {
-                <EducationOrArticle
-                    postDetails={article}
-                ></EducationOrArticle>
-            }
-            {
-                <EducationOrArticle
-                    postDetails={education}
-                ></EducationOrArticle>
+                <>
+                    <EducationOrArticle
+                        postDetails={article}
+                    ></EducationOrArticle>
+                    <EducationOrArticle
+                        postDetails={education}
+                    ></EducationOrArticle>
+                    <EventOrJob
+                        postDetails={event}
+                    ></EventOrJob>
+                </>
             }
 
         </div >
