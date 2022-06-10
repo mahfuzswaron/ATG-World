@@ -35,6 +35,18 @@ const event = {
         name: 'Random user',
         photo: '../../../../../assets/avatars/Rectangle 3.png'
     }
+};
+const job = {
+    category: 'Job',
+    title: 'Software Developer',
+    location: 'Noida, India',
+    company: 'Innovaccer Analytics Private Ltd.',
+    img: '../../../../../assets/images/Rectangle 5image.jpg',
+    icon: '💼',
+    poster: {
+        name: 'Random user',
+        photo: '../../../../../assets/avatars/Rectangle 3-3.png'
+    }
 }
 const AllPosts = () => {
     return (
@@ -49,6 +61,9 @@ const AllPosts = () => {
                     ></EducationOrArticle>
                     <EventOrJob
                         postDetails={event}
+                    ></EventOrJob>
+                    <EventOrJob
+                        postDetails={job}
                     ></EventOrJob>
                 </>
             }
