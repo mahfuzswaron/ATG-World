@@ -8,11 +8,24 @@ const EducationOrArticle = ({ postDetails }) => {
             <figure>
                 <img src={img} />
             </figure>
-            <div class="card-body">
+            <div class="card-body relative">
                 <p className='font-medium space-x-1 text-black text-lg'><span className='relative bottom-1 '>{icon}</span><span> {category}</span></p>
                 <h2 class="card-title text-black text-2xl font-semibold">
                     {title}
                 </h2>
+                <div className='absolute z-1 top-12 right-3 '>
+
+                    <div class="dropdown dropdown-top dropdown-end">
+                        <label tabindex="0" class=" btn btn-ghost ">
+                            <img src="../../../../../assets/icons/three-dots.png" alt="" className='w-5 h-5' />
+                        </label>
+                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded w-52">
+                            <li><a>Edit</a></li>
+                            <li><a>Report</a></li>
+                            <li><a>Save</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <p className='text-lg'>
                     {post}
                 </p>
