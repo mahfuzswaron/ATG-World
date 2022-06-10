@@ -1,23 +1,31 @@
 import React from 'react';
 import shareIcon from '../../../../../assets/icons/share-icon.png'
 
-const Post = () => {
+const EducationOrArticle = ({ postDetails }) => {
+    const { category, title, post, img, icon, poster } = postDetails;
     return (
         <div class="card card-compact w-full bg-white border border-[#E0E0E0]">
-            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+            <figure>
+                <img src={img} />
+            </figure>
             <div class="card-body">
-                <p className='font-medium space-x-1 text-black text-lg'><span className='relative bottom-1 '>✍️</span><span> Article</span></p>
-                <h2 class="card-title text-black text-3xl font-semibold">What if famous brands had regular fonts? Meet RegulaBrands!</h2>
-                <p className='text-lg'>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                <p className='font-medium space-x-1 text-black text-lg'><span className='relative bottom-1 '>{icon}</span><span> {category}</span></p>
+                <h2 class="card-title text-black text-2xl font-semibold">
+                    {title}
+                </h2>
+                <p className='text-lg'>
+                    {post}
+                </p>
+
                 <div class="justify-end mt-5">
                     <div className='flex items-center space-x-2'>
                         <div class="avatar">
                             <div class="w-14 rounded-full">
-                                <img src="https://api.lorem.space/image/face?hash=92310" />
+                                <img src={poster.photo} />
                             </div>
                         </div>
                         <p className='text-xl text-black font-semibold '>
-                            Mahfuz Swaron
+                            {poster.name}
                         </p>
 
                         <div className='flex justify-between items-center space-x-10'>
@@ -35,4 +43,4 @@ const Post = () => {
     );
 };
 
-export default Post;
+export default EducationOrArticle;
