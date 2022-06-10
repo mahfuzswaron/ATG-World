@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Discussion from './DiscussionSection/Discussion';
+import Modal from './Modal';
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Banner />
             <Discussion />
+            <Modal />
         </div>
     );
 };

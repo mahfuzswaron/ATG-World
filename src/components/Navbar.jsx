@@ -56,10 +56,9 @@ const Navbar = () => {
                                     <li><a class="justify-between">
                                         Log in
                                     </a></li>
-                                    <li><a onClick={() => setLoggedIn(true)} class="justify-between">
-                                        Sign Up
-                                    </a></li>
-
+                                    <li>
+                                        <a href="#my-modal-2" class="btn">open modal</a>
+                                    </li>
                                 </>
                         }
                     </ul>
