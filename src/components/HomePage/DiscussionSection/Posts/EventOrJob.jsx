@@ -10,7 +10,7 @@ const EventOrJob = ({ postDetails }) => {
                     <img src={img} />
                 </figure>
                 <div class="card-body relative">
-                    <p className='font-medium space-x-1 text-black text-lg'><span className='relative bottom-1 '>{icon}</span><span> {category}</span></p>
+                    <p className='font-medium space-x-1 text-black text-lg'><span className=' '>{icon}</span><span> {category}</span></p>
                     <h2 class="card-title text-black text-2xl font-semibold">
                         {title}
                     </h2>
@@ -30,7 +30,7 @@ const EventOrJob = ({ postDetails }) => {
 
                     <div className='flex space-x-10 mb-3'>
                         {
-                            category === 'Event'
+                            category === 'Meetup'
                                 ?
                                 <p className='flex items-center '>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -55,9 +55,9 @@ const EventOrJob = ({ postDetails }) => {
 
                     </div>
                     {
-                        category === 'Event'
+                        category === 'Meetup'
                             ?
-                            <button className='btn btn-outline text-orange-800 ' >Visit Website</button>
+                            <button className='btn btn-outline text-[#E56135] ' >Visit Website</button>
                             :
                             <button className='btn btn-outline btn-success ' >Apply on Timesjobs </button>
                     }

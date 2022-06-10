@@ -24,8 +24,8 @@ const education = {
         photo: '../../../../../assets/avatars/Rectangle 3-2.png'
     }
 };
-const event = {
-    category: 'Event',
+const Meetup = {
+    category: 'Meetup',
     title: 'Finance & Investment Elite Social Mixer @Lujiazui',
     location: 'Ahmedabad, India',
     date: 'Fri, 12 Oct, 2018',
@@ -50,7 +50,7 @@ const job = {
 }
 const AllPosts = () => {
     return (
-        <div className='w-3/4 bg-gray-100'>
+        <div className='w-3/4 bg-white grid grid-cols-1 gap-2 '>
             {
                 <>
                     <EducationOrArticle
@@ -60,7 +60,7 @@ const AllPosts = () => {
                         postDetails={education}
                     ></EducationOrArticle>
                     <EventOrJob
-                        postDetails={event}
+                        postDetails={Meetup}
                     ></EventOrJob>
                     <EventOrJob
                         postDetails={job}
