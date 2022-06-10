@@ -2,7 +2,7 @@ import React from 'react';
 
 const GroupNavBar = () => {
     return (
-        <div className='pt-5 mx-56 '>
+        <div className='pt-5'>
             <div className='flex justify-between '>
                 <div class="tabs">
                     <a class="tab tab-bordered pb-10  tab-active">All Posts (36) </a>
