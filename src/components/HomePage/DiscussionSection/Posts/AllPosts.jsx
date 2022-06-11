@@ -6,22 +6,22 @@ const article = {
     category: 'Article',
     title: 'What if famous brands had regular fonts? Meet RegulaBrands!',
     post: 'I’ve worked in UX for the better part of a decade. From now on, I plan to rei…',
-    img: '../../../../../assets/images/Rectangle 5image-2.jpg',
+    img: 'https://i.ibb.co/7yr01rd/Rectangle-5image-2.jpg',
     icon: '✍️',
     poster: {
         name: 'Random user',
-        photo: '../../../../../assets/avatars/Rectangle 3-1.png'
+        photo: 'https://api.lorem.space/image/face?hash=92310'
     }
 };
 const education = {
     category: 'Education',
     title: 'Tax Benefits for Investment under National Pension Scheme launched by Government',
     post: 'I’ve worked in UX for the better part of a decade. From now on, I plan to rei…',
-    img: '../../../../../assets/images/Rectangle 5image.jpg',
+    img: 'https://i.ibb.co/R90jHL8/Rectangle-5image.jpg',
     icon: '🔬',
     poster: {
         name: 'Random user',
-        photo: '../../../../../assets/avatars/Rectangle 3-2.png'
+        photo: 'https://api.lorem.space/image/face?hash=92310'
     }
 };
 const Meetup = {
@@ -29,11 +29,11 @@ const Meetup = {
     title: 'Finance & Investment Elite Social Mixer @Lujiazui',
     location: 'Ahmedabad, India',
     date: 'Fri, 12 Oct, 2018',
-    img: '../../../../../assets/images/Rectangle 5image.jpg',
+    img: 'https://i.ibb.co/8b8QVW8/Rectangle-5image-1.jpg',
     icon: '🗓',
     poster: {
         name: 'Random user',
-        photo: '../../../../../assets/avatars/Rectangle 3.png'
+        photo: 'https://api.lorem.space/image/face?hash=92310'
     }
 };
 const job = {
@@ -41,11 +41,11 @@ const job = {
     title: 'Software Developer',
     location: 'Noida, India',
     company: 'Innovaccer Analytics Private Ltd.',
-    img: '../../../../../assets/images/Rectangle 5image.jpg',
+    img: '',
     icon: '💼',
     poster: {
         name: 'Random user',
-        photo: '../../../../../assets/avatars/Rectangle 3-3.png'
+        photo: 'https://api.lorem.space/image/face?hash=92310'
     }
 }
 const AllPosts = () => {

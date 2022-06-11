@@ -33,18 +33,18 @@ const SignUpModal = () => {
 
                             <div className='mt-7'>
                                 <button className="btn btn-outline rounded-none normal-case my-2 w-full text-black border-[#D9D9DB]">
-                                    <img className='mr-2' src="../../../assets/icons/f_logo_RGB-Blue_1024.png" alt="" />
+                                    <img className='mr-2' src="https://i.ibb.co/Q6BC5dM/f-logo-RGB-Blue-1024.png" alt="" />
                                     Sign up with Facebook
                                 </button>
                                 <button className="btn btn-outline rounded-none normal-case my-2 w-full text-black border-[#D9D9DB] ">
-                                    <img className='mr-2' src="../../../assets/icons/google.png" alt="" />
+                                    <img className='mr-2' src="https://i.ibb.co/YNwGCYR/google.png" alt="" />
                                     Sign up with Google
                                 </button>
                             </div>
                         </div>
                         <div className='mt-3  mr-3'>
                             <p className='text-right'>Already have an account? <span className='btn-link'><a href="#sign-in-modal" >Sign in</a></span></p>
-                            <img src="../../../assets/images/atg_illustrationsignup-vector.png" alt="" />
+                            <img src="https://i.ibb.co/XtF67pY/atg-illustrationsignup-vector.png" alt="" />
                             <p className='text-xs text-center'>By signing up, you agree to our Terms & conditions, Privacy policy</p>
                         </div>
                     </div>

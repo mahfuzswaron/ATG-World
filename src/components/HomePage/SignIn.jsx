@@ -43,7 +43,7 @@ const SignIn = () => {
                         </div>
                         <div className='mt-3  mr-3'>
                             <p className='text-right'>Don't have an account? <span className='btn-link'><a href="#my-modal-2"> Create new for free!</a></span></p>
-                            <img src="../../../assets/images/atg_illustrationsignup-vector.png" alt="" />
+                            <img src="https://i.ibb.co/XtF67pY/atg-illustrationsignup-vector.png" alt="" />
 
                         </div>
                     </div>
