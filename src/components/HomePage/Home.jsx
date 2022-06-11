@@ -7,7 +7,7 @@ import SignUpModal from './SignUpModal';
 
 const Home = () => {
     return (
-        <div>
+        <div className='w-96 lg:w-full mx-0'>
             <Banner />
             <Discussion />
             <SignUpModal />
