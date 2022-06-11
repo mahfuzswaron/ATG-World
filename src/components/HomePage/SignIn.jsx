@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Modal = () => {
+const SignIn = () => {
     return (
-
         <div className='w-full'>
-            <div class="modal " id="my-modal-2">
+            <div class="modal " id="sign-in-modal">
                 <div class="modal-box bg-white rounded pt-0 px-0 w-7/12 max-w-5xl">
                     <div className='bg-[#EFFFF4]'>
                         <p className='text-[#008A45] text-center py-5'>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
@@ -13,13 +12,9 @@ const Modal = () => {
                     <div className='flex justify-evenly mt-5 px-10'>
                         <div className='w-1/2'>
                             <h3 className="text-left font-bold text-3xl text-black">
-                                Create Account
+                                Sign In
                             </h3>
                             <div className='grid grid-cols-1 relative my-5 '>
-                                <div className="grid grid-cols-2">
-                                    <input className='input rounded-none bg-[#F7F8FA] border-[#D9D9DB]' type="text" name="firstname" id="" placeholder='First Name' />
-                                    <input className='input rounded-none bg-[#F7F8FA] border-[#D9D9DB]' type="text" name="lastname" id=" " placeholder='Last Name' />
-                                </div>
                                 <input className='input rounded-none bg-[#F7F8FA] border-[#D9D9DB]' type="email" name="" id="" placeholder='Email Adress' />
                                 <input className='input rounded-none bg-[#F7F8FA] border-[#D9D9DB]' type="password" name="" id="" placeholder='Password' />
 
@@ -29,23 +24,24 @@ const Modal = () => {
                                 </svg>
                                 <input className='input rounded-none bg-[#F7F8FA] border-[#D9D9DB]' type="password" name="" id="" placeholder='Confirm Password' />
                             </div>
-                            <button type="submit" className='btn rounded-full w-full text-white border-none bg-[#2F6CE5]'>Create Account</button>
+                            <button type="submit" className='btn rounded-full w-full text-white border-none bg-[#2F6CE5]'>Sign In</button>
 
                             <div className='mt-7'>
                                 <button className="btn btn-outline rounded-none normal-case my-2 w-full text-black border-[#D9D9DB]">
                                     <img className='mr-2' src="../../../assets/icons/f_logo_RGB-Blue_1024.png" alt="" />
-                                    Sign up with Facebook
+                                    Sign in with Facebook
                                 </button>
                                 <button className="btn btn-outline rounded-none normal-case my-2 w-full text-black border-[#D9D9DB] ">
                                     <img className='mr-2' src="../../../assets/icons/google.png" alt="" />
-                                    Sign up with Google
+                                    Sign in with Google
                                 </button>
+                                <p className='font-bold text-sm text-black my-3 text-center'>Forgotten password?</p>
                             </div>
                         </div>
                         <div className='mt-3  mr-3'>
-                            <p className='text-right'>Already have an account? <span className='btn-link'>Sign In</span></p>
+                            <p className='text-right'>Don't have an account? <span className='btn-link'><a href="#my-modal-2"> Create new for free!</a></span></p>
                             <img src="../../../assets/images/atg_illustrationsignup-vector.png" alt="" />
-                            <p className='text-xs text-center'>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+
                         </div>
                     </div>
                 </div>
@@ -55,4 +51,5 @@ const Modal = () => {
     );
 };
 
-export default Modal;
+
+export default SignIn;

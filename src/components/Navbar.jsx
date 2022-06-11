@@ -57,7 +57,10 @@ const Navbar = () => {
                                         Log in
                                     </a></li>
                                     <li>
-                                        <a href="#my-modal-2" class="btn">open modal</a>
+                                        <a href="#sign-in-modal" class="btn">Sign in</a>
+                                    </li>
+                                    <li>
+                                        <a href="#my-modal-2" class="btn">Sign up</a>
                                     </li>
                                 </>
                         }
