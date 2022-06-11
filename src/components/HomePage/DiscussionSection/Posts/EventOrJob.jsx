@@ -18,7 +18,7 @@ const EventOrJob = ({ postDetails }) => {
 
                         <div class="dropdown dropdown-top dropdown-end">
                             <label tabindex="0" class=" btn btn-ghost ">
-                                <img src="../../../../../assets/icons/three-dots.png" alt="" className='w-5 h-5' />
+                                <img src="https://i.ibb.co/NjcFzwy/three-dots.png" alt="" className='w-5 h-5' />
                             </label>
                             <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded w-52">
                                 <li><a>Edit</a></li>
