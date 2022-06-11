@@ -50,7 +50,7 @@ const job = {
 }
 const AllPosts = () => {
     return (
-        <div className='w-3/4 bg-white grid grid-cols-1 gap-2 '>
+        <div className='lg:w-3/4 w-full bg-white grid grid-cols-1 gap-2 '>
             {
                 <>
                     <EducationOrArticle

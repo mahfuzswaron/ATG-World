@@ -4,6 +4,7 @@ const SignIn = () => {
     return (
         <div className='w-full'>
             <div class="modal " id="sign-in-modal">
+                {/* <input type="checkbox" id="sign-in-modal" class="modal-toggle" /> */}
                 <div class="modal-box bg-white rounded pt-0 px-0 w-7/12 max-w-5xl">
                     <div className='bg-[#EFFFF4]'>
                         <p className='text-[#008A45] text-center py-5'>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
@@ -24,8 +25,10 @@ const SignIn = () => {
                                 </svg>
                                 <input className='input rounded-none bg-[#F7F8FA] border-[#D9D9DB]' type="password" name="" id="" placeholder='Confirm Password' />
                             </div>
-                            <button type="submit" className='btn rounded-full w-full text-white border-none bg-[#2F6CE5]'>Sign In</button>
 
+                            <div class="modal-action">
+                                <label for="sign-in-modal" class="btn rounded-full w-full text-white border-none bg-[#2F6CE5]"><a href="#">Sign In</a></label>
+                            </div>
                             <div className='mt-7'>
                                 <button className="btn btn-outline rounded-none normal-case my-2 w-full text-black border-[#D9D9DB]">
                                     <img className='mr-2' src="../../../assets/icons/f_logo_RGB-Blue_1024.png" alt="" />
@@ -35,7 +38,7 @@ const SignIn = () => {
                                     <img className='mr-2' src="../../../assets/icons/google.png" alt="" />
                                     Sign in with Google
                                 </button>
-                                <p className='font-bold text-sm text-black my-3 text-center'>Forgotten password?</p>
+                                <p className='font-bold text-sm text-black my-3 text-center btn-link'>Forgotten password?</p>
                             </div>
                         </div>
                         <div className='mt-3  mr-3'>

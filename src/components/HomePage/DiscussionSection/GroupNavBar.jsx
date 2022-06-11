@@ -2,16 +2,16 @@ import React from 'react';
 
 const GroupNavBar = () => {
     return (
-        <div className='pt-5'>
+        <div className='pt-5 lg:block hidden'>
             <div className='flex justify-between '>
-                <div class="tabs">
+                <div class="tabs ">
                     <a class="tab tab-bordered pb-10  tab-active">All Posts (36) </a>
                     <a class="tab tab-bordered pb-10 ">Article</a>
                     <a class="tab tab-bordered pb-10 ">Event</a>
                     <a class="tab tab-bordered pb-10 ">Education</a>
                     <a class="tab tab-bordered pb-10 ">Job</a>
                 </div>
-                <div className='space-x-4 flex items-center'>
+                <div className='space-x-4 items-center '>
 
                     <div class="dropdown">
                         <label tabindex="0" class="btn border-none m-1 text-black bg-[#EDEEF0]">Write a Post

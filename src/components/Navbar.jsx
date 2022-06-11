@@ -3,7 +3,7 @@ import logo from '../../assets/icons/logo.png';
 const Navbar = () => {
     const [loggedIn, setLoggedIn] = useState(false);
     return (
-        <div className='px-14 bg-white'>
+        <div className='px-14 bg-white hidden lg:block'>
             <div class="navbar">
                 <div class="navbar-start">
                     <a class="btn btn-ghost normal-case text-xl">

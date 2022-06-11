@@ -4,7 +4,7 @@ import shareIcon from '../../../../../assets/icons/share-icon.png';
 const EducationOrArticle = ({ postDetails }) => {
     const { category, title, post, img, icon, poster } = postDetails;
     return (
-        <div class="card card-compact rounded w-full bg-white border border-[#E0E0E0]">
+        <div class="card card-compact rounded w-96 lg:w-full bg-white border border-[#E0E0E0]">
             <figure>
                 <img src={img} />
             </figure>

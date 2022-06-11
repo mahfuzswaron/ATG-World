@@ -5,9 +5,9 @@ import AllPosts from './Posts/AllPosts';
 
 const Discussion = () => {
     return (
-        <div className='bg-white px-56'>
+        <div className='bg-white p-1 lg:px-56'>
             <GroupNavBar></GroupNavBar>
-            <div className='flex justify-between pt-2'>
+            <div className='lg:flex block justify-between pt-2'>
                 <AllPosts></AllPosts>
                 <Aside></Aside>
             </div>
