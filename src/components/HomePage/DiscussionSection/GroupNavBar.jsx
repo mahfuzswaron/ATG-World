@@ -11,7 +11,7 @@ const GroupNavBar = () => {
                     <a class="tab tab-bordered pb-10 ">Education</a>
                     <a class="tab tab-bordered pb-10 ">Job</a>
                 </div>
-                <div className='space-x-4 items-center '>
+                <div className='space-x-4 items-center flex '>
 
                     <div class="dropdown">
                         <label tabindex="0" class="btn border-none m-1 text-black bg-[#EDEEF0]">Write a Post
